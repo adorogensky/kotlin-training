@@ -15,7 +15,7 @@ class KotlinTests {
     @Test
     fun `creates array and prints its elements`() {
         var numbers = arrayOf(1, 2, 3)
-        for (i in numbers) println(i)
+        numbers.forEach { println(it) }
 
         assertEquals(1, numbers[0])
         assertEquals(1, numbers.get(0))

@@ -14,11 +14,15 @@ class KotlinTests {
 
     @Test
     fun `creates array and prints its elements`() {
-        val numbers = arrayOf(1, 2, 3)
+        var numbers = arrayOf(1, 2, 3)
         for (i in numbers) println(i)
 
         assertEquals(1, numbers[0])
         assertEquals(1, numbers.get(0))
         assertEquals(3, numbers.size)
+
+        numbers.set(0, 2)
+
+        assertEquals(2, numbers[0])
     }
 }

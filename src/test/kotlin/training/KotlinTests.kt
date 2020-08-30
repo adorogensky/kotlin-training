@@ -28,6 +28,9 @@ class KotlinTests {
 
     @Test
     fun `creates list and prints its elements`() {
-        var numbers = listOf(1, 2, 3);
+        var numbers = mutableListOf(1, 2, 3);
+        numbers.add(3)
+        assertEquals(4, numbers.size)
+        assertEquals(3, numbers.last())
     }
 }

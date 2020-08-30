@@ -25,4 +25,9 @@ class KotlinTests {
 
         assertEquals(2, numbers[0])
     }
+
+    @Test
+    fun `creates list and prints its elements`() {
+        var numbers = listOf(1, 2, 3);
+    }
 }

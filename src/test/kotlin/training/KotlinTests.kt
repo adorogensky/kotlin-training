@@ -5,11 +5,13 @@ import kotlin.test.assertEquals
 
 class KotlinTests {
 
-    fun getGreeting(greeting: String, who: String): String = "$greeting $who"
+    fun printGreeting(greeting: String, vararg who: String) {
+        who.forEach { println("$greeting $it") }
+    }
 
     @Test
     fun `prints hello world`() {
-        println(getGreeting("Hello", "World"))
+        printGreeting("Hello", "World")
     }
 
     @Test

@@ -4,9 +4,7 @@ import org.junit.Test
 
 class KotlinTests {
 
-    fun getGreeting(greeting: String, who: String) {
-        println(greeting + " " + who)
-    }
+    fun getGreeting(greeting: String, who: String): String = "$greeting $who"
 
     @Test
     fun `prints hello world`() {

@@ -6,9 +6,9 @@ class KotlinTests {
 
     @Test
     fun `prints hello world`() {
-        var greeting = "Hello World"
+        var greeting:String? = "Hello World"
         println(greeting)
-        greeting = "Good bye World"
+        greeting = null
         println(greeting)
     }
 }

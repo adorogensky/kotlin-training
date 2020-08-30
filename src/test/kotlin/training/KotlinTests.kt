@@ -27,10 +27,10 @@ class KotlinTests {
     }
 
     @Test
-    fun `creates list and prints its elements`() {
+    fun `creates list and modifies it`() {
         var numbers = mutableListOf(1, 2, 3);
-        numbers.add(3)
+        numbers.add(0, 0)
         assertEquals(4, numbers.size)
-        assertEquals(3, numbers.last())
+        assertEquals(0, numbers.first())
     }
 }

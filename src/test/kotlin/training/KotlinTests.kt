@@ -6,7 +6,7 @@ class KotlinTests {
 
     @Test
     fun `prints hello world`() {
-        val greeting: String = "Hello World"
+        val greeting = "Hello World"
         println(greeting)
     }
 }

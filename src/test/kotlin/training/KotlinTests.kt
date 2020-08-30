@@ -4,11 +4,12 @@ import org.junit.Test
 
 class KotlinTests {
 
+    fun getGreeting(): String {
+        return "Hello World"
+    }
+
     @Test
     fun `prints hello world`() {
-        var greeting:String? = "Hello World"
-        println(greeting)
-        greeting = null
-        println(greeting)
+        println(getGreeting())
     }
 }

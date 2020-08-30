@@ -15,7 +15,7 @@ class KotlinTests {
     @Test
     fun `creates array and prints its elements`() {
         var numbers = arrayOf(1, 2, 3)
-        numbers.forEach { element -> println(element) }
+        numbers.forEachIndexed { index, element -> println("element[$index] = $element") }
 
         assertEquals(1, numbers[0])
         assertEquals(1, numbers.get(0))

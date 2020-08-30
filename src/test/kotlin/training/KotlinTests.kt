@@ -5,7 +5,7 @@ import org.junit.Test
 class KotlinTests {
 
     @Test
-    fun hello_world() {
+    fun `prints hello world`() {
        println("Hello World")
     }
 }

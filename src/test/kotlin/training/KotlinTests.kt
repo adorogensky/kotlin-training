@@ -33,4 +33,12 @@ class KotlinTests {
         assertEquals(4, numbers.size)
         assertEquals(0, numbers.first())
     }
+
+    @Test
+    fun `creates map, modifies it and prints its elements`() {
+        var codeToCharMap = mutableMapOf(1 to 'a', 2 to 'b', 3 to 'c')
+        codeToCharMap.put(4, 'd')
+
+        codeToCharMap.forEach { key, value -> println("$key -> $value") }
+    }
 }
